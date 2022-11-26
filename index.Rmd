@@ -1,0 +1,19 @@
+---
+title: "Butte Website"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      error = TRUE)
+```
+
+# Description
+
+This site will contain contact information relating to all things Butte.
+
+
+# To Do
+
+1. Add all contacts relating to Butte
+1. Add videos of how to open up and close down the Butte house
+
