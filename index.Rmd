@@ -20,4 +20,4 @@ This site will contain contact information relating to all things Butte.
 
 please work
 
-[!Butte elevator](Images/elevator.png)
+![Butte elevator](Images/elevator.png)
