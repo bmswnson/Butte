@@ -2,7 +2,6 @@
 # To Do:
 # 1. Create a personal access token (PAT) labeled `EMAIL`: https://github.com/settings/tokens; save the value in LastPass
 # 2. Create a secret labeled `EMAIL` in the repo (Settings -> Security -> Secrets -> Actions), and copy the PAT for `EMAIL` into the secret labeled `EMAIL`
-
 on:
   push:
      branches:
