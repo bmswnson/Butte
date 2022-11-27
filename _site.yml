@@ -14,7 +14,7 @@ output_format:
       code_download: true
       theme: readable
       css: ["includes/custom.css", "font/css/roboto.css"]
-password: "Test"
+   password: "Test"
 new_session: true
 navbar:
   title: "Butte"

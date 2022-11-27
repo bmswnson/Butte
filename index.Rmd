@@ -1,5 +1,8 @@
 ---
-title: "Butte Website"
+output:
+  fidelius::html_password_protected:
+    password: "Test"
+
 ---
 
 ```{r setup, include = FALSE}
