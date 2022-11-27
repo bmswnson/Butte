@@ -17,6 +17,8 @@ new_session: true
 navbar:
   title: "Butte"
   left:
+    - text: "Contact Information"
+      href: contacts.html
     - text: "Land Description"
       href: land.html
     - text: "Hunters"

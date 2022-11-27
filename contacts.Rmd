@@ -1,0 +1,11 @@
+---
+title: "Contacts"
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      error = TRUE)
+```
+
+# This will contain contact information for people in Butte
