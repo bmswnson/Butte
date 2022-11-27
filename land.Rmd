@@ -1,0 +1,17 @@
+---
+title: "Land"
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      error = TRUE)
+```
+
+# This will contain information on land
+
+This can include: 
+
+1. Where the land is located
+1. Who is renting it
+1. When CRP dates are up for renewal
