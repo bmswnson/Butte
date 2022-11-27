@@ -4,4 +4,5 @@ Version: 1.0.0
 Imports:
   rmarkdown,
   blogdown,
-  remotes
+  remotes, 
+  fidelius
