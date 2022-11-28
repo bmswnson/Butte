@@ -12,8 +12,8 @@ output:
         df_print: paged
         code_download: true
         theme: readable
-  password: "contactPassword"
-  hint: "The password is contactPassword"
+    password: "contactPassword"
+    hint: "The password is contactPassword"
 ---
 
 
