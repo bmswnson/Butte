@@ -1,5 +1,10 @@
 ---
-title: "Contacts"
+output:
+  fidelius::html_password_protected:
+    output_format:
+      rmarkdown::html_document:
+  password: contactPassword
+  hint: "The password is contactPassword"
 ---
 
 
