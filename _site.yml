@@ -2,7 +2,7 @@ name: "Mudcats Stats"
 output_dir: "_site"
 author: Ben Swanson
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
-fidelius::html_password_protected:
+#fidelius::html_password_protected:
 output_format:
    rmarkdown::html_document:
       toc: true
@@ -14,7 +14,7 @@ output_format:
       code_download: true
       theme: readable
       css: ["includes/custom.css", "font/css/roboto.css"]
-   password: "Test"
+   #password: "Test"
 new_session: true
 navbar:
   title: "Butte"
