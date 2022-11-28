@@ -15,3 +15,7 @@ This can include:
 1. Where the land is located
 1. Who is renting it
 1. When CRP dates are up for renewal
+
+# Land Description
+
+<embed src="Files/LandPlats.pdf" width="1000" height="600">

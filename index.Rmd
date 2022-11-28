@@ -32,5 +32,3 @@ please work
 
 ![Butte elevator](Images/elevator.png)
 
-
-Test with private
