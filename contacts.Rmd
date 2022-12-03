@@ -30,7 +30,9 @@ knitr::opts_chunk$set(echo = TRUE,
 Butte wifi house password: `Rusogirl1` (Not 100% sure on this one)
 
 
-# Mowing in Town: Amy Nechiperenko
+## Contacts and Description
+
+### Mowing in Town: Amy Nechiperenko {#amyNechiperenko}
 
 Amy has mowed for us for many years and is the daughter of Jim's best friend, Ronnie Nechiperenko.
 Amy is also a good contact for other things happening in Butte.
@@ -38,7 +40,7 @@ Amy is also a good contact for other things happening in Butte.
 
 * **Phone:** `701-626-1104`
 
-# Electic/Plumber?: Pat Haugen
+### Electic/Plumber?: Pat Haugen
 
 Possibly electrician or plumber who did stuff at Butte house basement.
 Was paid to do work on 7/22/22.
@@ -46,12 +48,19 @@ He has also worked at Ducks, and Nancy Ostrom went to Nashville with him.
 
 * **Phone:** `Unknown`
 
-# Mowing at Ducks: Dana Anderson
+### Mowing at Ducks: Dana Anderson
 
 Mows at Ducks and is paid $300 bucks for the whole summer in 2022.
 
 * **Phone:** `Unknown`
 
+### Cathy Shotz
+
+Owned the bar in Butte for many years and has great hommade donuts.
+Cathy is also the contact for the sewer bill in Butte.
+Her daughter is [Amy Nechiperenko](#amyNechiperenko)
+
+Phone: `unkknown`
 
 
 
