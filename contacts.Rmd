@@ -12,8 +12,8 @@ output:
         df_print: paged
         code_download: true
         theme: readable
-    password: "contactPassword"
-    hint: "The password is contactPassword"
+    password: "test"
+    hint: "The password is test"
 ---
 
 
@@ -22,6 +22,12 @@ knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
 
+
+# Butte House Information
+
+## Wifi Password
+
+Butte wifi house password: `Rusogirl1` (Not 100% sure on this one)
 
 
 # Mowing in Town: Amy Nechiperenko
