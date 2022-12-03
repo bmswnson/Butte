@@ -16,7 +16,7 @@
 <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -29,9 +29,16 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -56,8 +63,15 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+#rmd-source-code {
+  display: none;
+}
+</style>
 
 
+<link rel="stylesheet" href="includes/custom.css" type="text/css" />
+<link rel="stylesheet" href="font/css/roboto.css" type="text/css" />
 
 
 
@@ -216,7 +230,73 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
 
 
 
@@ -226,6 +306,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -261,6 +351,16 @@ $(document).ready(function () {
 
 <div id="header">
 
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+<li role="separator" class="divider"></li>
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
+
 
 
 <h1 class="title toc-ignore">Land Description</h1>
@@ -268,8 +368,10 @@ $(document).ready(function () {
 </div>
 
 
-<div id="this-will-contain-information-on-land" class="section level1">
-<h1>This will contain information on land</h1>
+<div id="this-will-contain-information-on-land" class="section level1"
+number="1">
+<h1><span class="header-section-number">1</span> This will contain
+information on land</h1>
 <p>This can include:</p>
 <ol style="list-style-type: decimal">
 <li>Where the land is located</li>
@@ -277,11 +379,11 @@ $(document).ready(function () {
 <li>When CRP dates are up for renewal</li>
 </ol>
 </div>
-<div id="land-file" class="section level1">
-<h1>Land File</h1>
+<div id="land-file" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Land File</h1>
 <embed src="Files/LandPlats.pdf" width="1000" height="600">
-<div id="first-farm" class="section level2">
-<h2>First Farm</h2>
+<div id="first-farm" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> First Farm</h2>
 <p>The first farm includes the following sections.</p>
 <ul>
 <li><strong>Section 32:</strong>
@@ -299,8 +401,8 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 </div>
-<div id="ducks-landing" class="section level2">
-<h2>Ducks Landing</h2>
+<div id="ducks-landing" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Ducks Landing</h2>
 <p>Ducks landing contains the following sections.</p>
 <ul>
 <li><strong>Section 18:</strong> Ducks landing and surrounding pasture
@@ -320,8 +422,8 @@ cabin
 </ul></li>
 </ul>
 </div>
-<div id="home-farm" class="section level2">
-<h2>Home Farm</h2>
+<div id="home-farm" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Home Farm</h2>
 <p>This contains the original homestead that Sam Lakoduk (Eddies dad?)
 homesteaded on.</p>
 <ul>
@@ -331,8 +433,8 @@ homesteaded on.</p>
 </ul></li>
 </ul>
 </div>
-<div id="north-farm" class="section level2">
-<h2>North Farm</h2>
+<div id="north-farm" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> North Farm</h2>
 <p>This is the site of the “stadium” and has had great deer hunting over
 the years.</p>
 <ul>
@@ -346,8 +448,8 @@ incorrect)
 </ul></li>
 </ul>
 </div>
-<div id="turkey-farm" class="section level2">
-<h2>Turkey Farm</h2>
+<div id="turkey-farm" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Turkey Farm</h2>
 <ul>
 <li><strong>Section 12</strong>
 <ul>
@@ -355,8 +457,8 @@ incorrect)
 </ul></li>
 </ul>
 </div>
-<div id="flats" class="section level2">
-<h2>Flats</h2>
+<div id="flats" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Flats</h2>
 <p>This has traditionally been pasture land.</p>
 <ul>
 <li><strong>Section 1</strong>
@@ -380,8 +482,11 @@ incorrect)
 </div>
 </div>
 
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiTGFuZCBEZXNjcmlwdGlvbiIKLS0tCgoKYGBge3Igc2V0dXAsIGluY2x1ZGUgPSBGQUxTRX0Ka25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFLAogICAgICAgICAgICAgICAgICAgICAgZXJyb3IgPSBUUlVFKQpgYGAKCiMgVGhpcyB3aWxsIGNvbnRhaW4gaW5mb3JtYXRpb24gb24gbGFuZAoKVGhpcyBjYW4gaW5jbHVkZTogCgoxLiBXaGVyZSB0aGUgbGFuZCBpcyBsb2NhdGVkCjEuIFdobyBpcyByZW50aW5nIGl0CjEuIFdoZW4gQ1JQIGRhdGVzIGFyZSB1cCBmb3IgcmVuZXdhbAoKIyBMYW5kIEZpbGUKCjxlbWJlZCBzcmM9IkZpbGVzL0xhbmRQbGF0cy5wZGYiIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjYwMCI+CgoKIyMgRmlyc3QgRmFybQoKVGhlIGZpcnN0IGZhcm0gaW5jbHVkZXMgdGhlIGZvbGxvd2luZyBzZWN0aW9ucy4KCiogKipTZWN0aW9uIDMyOioqCiAgKiBXXjEvMl4KICAqIE5FXjEvNF4KICAqIE5XXjEvNF4KICAqIFNXXjEvNF4KICAqIFNFXjEvNF4KKiAqKlNlY3Rpb24gMjkqKgogICogU14xLzJeIChHcmF2ZWwgUGl0KQogICogU1deMS80XiAoR3JhdmVsIFBpdCkKICAKCiMjIER1Y2tzIExhbmRpbmcKCkR1Y2tzIGxhbmRpbmcgY29udGFpbnMgdGhlIGZvbGxvd2luZyBzZWN0aW9ucy4gCgoqICoqU2VjdGlvbiAxODoqKiBEdWNrcyBsYW5kaW5nIGFuZCBzdXJyb3VuZGluZyBwYXN0dXJlIGxhbmQKICAqIEVeMS8yXk5XXjEvNF4gTG90cyAxIGFuZCAyCiAgKiBMb3RzIDMgYW5kIDQgRTHigYQyU1cx4oGENAogICogU1deMS80XgogICogU0VeMS80XiAoQmVuIGJlbGlldmVzIHRoZSBjYWJpbiBzaXRzIG9uIHRoaXMgcGllY2UpCiogKipTZWN0aW9uIDE5OioqICJEZWFkIiBhcmVhIHNvdXRoIG9mIHRoZSBEdWNrcyBsYW5kaW5nIGNhYmluCiAgKiBOV14xLzReTkVeMS80XgogICogTkVeMS80Xk5XXjEvNF4KICAqIE5XXjEvNF5OV14xLzReCiAgCiMjIEhvbWUgRmFybQoKVGhpcyBjb250YWlucyB0aGUgb3JpZ2luYWwgaG9tZXN0ZWFkIHRoYXQgU2FtIExha29kdWsgKEVkZGllcyBkYWQ/KSBob21lc3RlYWRlZCBvbi4KCiogKipTZWN0aW9uIDI0OioqIAogICogTkVeMS80XgogIAojIyBOb3J0aCBGYXJtCgpUaGlzIGlzIHRoZSBzaXRlIG9mIHRoZSAic3RhZGl1bSIgYW5kIGhhcyBoYWQgZ3JlYXQgZGVlciBodW50aW5nIG92ZXIgdGhlIHllYXJzLgoKKiAqKlNlY3Rpb24gMTM6KiogKE5lZWRzIHNvbWUgd29yayBhbmQgbG9va3MgdG8gYmUgaW5jb3JyZWN0KQogICogTkVeMS80XgogICogRV4xLzJeTldeMS80XgogICogTkVeMS80XlNFXjEvNF4KICAqIFNFXjEvNF5TRV4xLzReIChUaGlzIG1heSBiZSBpbmNvcnJlY3QpCiAgCiMjIFR1cmtleSBGYXJtCgoqICoqU2VjdGlvbiAxMioqCiAgKiBTXjEvMl5TRV4xLzReCiAgCiMjIEZsYXRzCgpUaGlzIGhhcyB0cmFkaXRpb25hbGx5IGJlZW4gcGFzdHVyZSBsYW5kLgoKKiAqKlNlY3Rpb24gMSoqCiAgKiBFXjEvMl5TRV4xLzReCgoqICoqU2VjdGlvbiA2OioqCiAgKiBFXjEvMl4x4oGEMlNXXjEvNF4sIExvdHMgNiBhbmQgNwoKKiAqKlNlY3Rpb24gNzoqKgogICogTkVeMS80XgogICogRV4xLzJeTldeMS80XiwgTG90cyAxIGFuZCAyCiAgCiogKipTZWN0aW9uIDEyOioqIAogICogTkVeMS80Xk5FXjEvNF4KCgoK</div>
 
 
+</div>
+</div>
 
 </div>
 
@@ -413,7 +518,42 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("land.Rmd");
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
