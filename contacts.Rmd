@@ -1,5 +1,5 @@
 ---
-Title: "Butte Contacts"
+Title: "Protected Information"
 output:
   fidelius::html_password_protected:
     output_format:
@@ -22,17 +22,9 @@ knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
 
+# Helpful Contacts
 
-# Butte House Information
-
-## Wifi Password
-
-Butte wifi house password: `Rusogirl1` (Not 100% sure on this one)
-
-
-## Contacts and Description
-
-### Mowing in Town: Amy Nechiperenko {#amyNechiperenko}
+## Mowing in Town: Amy Nechiperenko {#amyNechiperenko}
 
 Amy has mowed for us for many years and is the daughter of Jim's best friend, Ronnie Nechiperenko.
 Amy is also a good contact for other things happening in Butte.
@@ -40,7 +32,7 @@ Amy is also a good contact for other things happening in Butte.
 
 * **Phone:** `701-626-1104`
 
-### Electic/Plumber?: Pat Haugen
+## Electic/Plumber?: Pat Haugen
 
 Possibly electrician or plumber who did stuff at Butte house basement.
 Was paid to do work on 7/22/22.
@@ -48,13 +40,13 @@ He has also worked at Ducks, and Nancy Ostrom went to Nashville with him.
 
 * **Phone:** `Unknown`
 
-### Mowing at Ducks: Dana Anderson
+## Mowing at Ducks: Dana Anderson
 
 Mows at Ducks and is paid $300 bucks for the whole summer in 2022.
 
 * **Phone:** `Unknown`
 
-### Kathy Schatz
+## Kathy Schatz
 
 Owned the bar in Butte for many years and has great hommade donuts.
 Cathy is also the contact for the sewer bill in Butte.
@@ -64,6 +56,70 @@ Her daughter is [Amy Nechiperenko](#amyNechiperenko)
   * Information found here: https://www.anamoose.com/lodges.php
 
 
+# Butte House Information
+
+## Wifi Password
+
+Butte wifi house password: `Rusogirl1` (Not 100% sure on this one)
+
+## Opening up the house
+
+Place holder section on opening up the house.
+
+1. Place instructions on closing down the house
+1. Video of how to open up house
+
+## Closing Down the house
+
+Place holder section on closing down the house.
+
+1. Place instructions on closing down the house
+1. Video of how to close down the house up house
+
+## Log of Past projects
+
+### Garage
+
+* Fall 2021
+  * New garage door put in by Joe Legg
+
+### House
+
+* Summer 2021
+  * New electric and plumbing set up downstairs
+  * New water heater
+
+* 2017-2019??
+  * Hyme and his group did a number of projects including
+    * Roof on the house
+    * Put rocks in the basement
+    * Dug under the house and poured cement to support the house
+    * New kitchen ceiling
+    * Fixed cracks in walls
 
 
+# Ducks Landing Information
 
+## Helpful Notes
+
+* The electric will trip if all heaters are on at same time
+* There is a large draft that comes thorugh the south front door
+
+## Setting up TV
+
+* There is a tailgater satelite that we keep in the house at Butte.
+This can be put outside and you can pay to have it activated for a month at a time by calling.
+
+## Opening up the cabin
+
+Place holder section on opening up the cabin.
+
+1. Place instructions on closing down the cabin
+1. Video of how to open up cabin
+
+## Closing Down the cabin
+
+Place holder section on closing down the cabin.
+
+1. Place instructions on closing down the cabin
+1. Video of how to close down the cabin up cabin
