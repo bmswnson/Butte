@@ -6,7 +6,7 @@ title: Butte Information
 knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
-<website>
+<font size = 5>
 
 # Description
 
@@ -23,4 +23,4 @@ please work
 
 ![Butte elevator](Images/elevator.png)
 
-</website>
+</font>

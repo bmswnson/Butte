@@ -22,7 +22,7 @@ fontsize: 12pt
 knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
-<website>
+<font size = 5>
 
 # To-Do List
 
@@ -136,4 +136,4 @@ Place holder section on closing down the cabin.
 1. Place instructions on closing down the cabin
 1. Video of how to close down the cabin up cabin
 
-</website>
+</font>
