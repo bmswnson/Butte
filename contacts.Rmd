@@ -11,7 +11,7 @@ output:
         code_folding: hide
         df_print: paged
         code_download: true
-        theme: readable
+        theme: cerulean
     password: "test"
     hint: "The password is test"
 ---
@@ -21,6 +21,14 @@ output:
 knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
+
+# To-Do List
+
+* Trim the shrubs around the house to clean up the yard
+  * Think of something to replace the shrub that Ben and Melissa destroyed in Fall of 2022
+  * Buy a chainsaw or electric trimmer
+
+
 
 # Helpful Contacts
 
@@ -104,6 +112,8 @@ Place holder section on closing down the house.
 
 * The electric will trip if all heaters are on at same time
 * There is a large draft that comes thorugh the south front door
+* It is very helpful to have mice poison ready to thow downstairs.
+Mice really work their way in there in the winter.
 
 ## Setting up TV
 
