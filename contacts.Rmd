@@ -22,7 +22,7 @@ fontsize: 12pt
 knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
-<font size = 5>
+<font size = 4>
 
 # To-Do List
 
