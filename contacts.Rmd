@@ -14,6 +14,7 @@ output:
         theme: cerulean
     password: "test"
     hint: "The password is test"
+fontsize: 12pt
 ---
 
 
@@ -21,6 +22,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE,
                       error = TRUE)
 ```
+<website>
 
 # To-Do List
 
@@ -133,3 +135,5 @@ Place holder section on closing down the cabin.
 
 1. Place instructions on closing down the cabin
 1. Video of how to close down the cabin up cabin
+
+</website>
