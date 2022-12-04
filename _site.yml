@@ -13,6 +13,7 @@ output:
     code_download: true
     theme: cerulean
     css: ["includes/custom.css", "font/css/roboto.css"]
+    fontsize: 6 pt
 new_session: true
 navbar:
   title: "Butte"
