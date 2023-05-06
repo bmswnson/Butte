@@ -30,7 +30,12 @@ knitr::opts_chunk$set(echo = TRUE,
   * Think of something to replace the shrub that Ben and Melissa destroyed in Fall of 2022
   * Buy a chainsaw or electric trimmer
 
+# Butte House Information
 
+## Wifi 
+
+* Wifi name: `Ruso`
+  * password: `Rusogirl1` 
 
 # Helpful Contacts
 
@@ -66,12 +71,6 @@ Her daughter is [Amy Nechiperenko](#amyNechiperenko)
   * Information found here: https://www.anamoose.com/lodges.php
 
 
-# Butte House Information
-
-## Wifi Password
-
-Butte wifi house password: `Rusogirl1` (Not 100% sure on this one)
-
 ## Opening up the house
 
 Place holder section on opening up the house.
@@ -86,14 +85,14 @@ Place holder section on closing down the house.
 1. Place instructions on closing down the house
 1. Video of how to close down the house up house
 
-## Log of Past projects
+# Log of Past projects at Butte house
 
-### Garage
+## Garage
 
 * Fall 2021
   * New garage door put in by Joe Legg
 
-### House
+## House
 
 * Summer 2021
   * New electric and plumbing set up downstairs
