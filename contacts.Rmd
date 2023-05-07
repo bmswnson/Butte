@@ -32,10 +32,30 @@ knitr::opts_chunk$set(echo = TRUE,
 
 # Butte House Information
 
+**Address:**311 Kerstin St., Butte ND, 58723 
+
 ## Wifi 
 
 * Wifi name: `Ruso`
   * password: `Rusogirl1` 
+* Phone: `701-626-7264`
+
+
+## Opening the house
+
+Place holder section on opening up the house.
+
+1. Place instructions on closing down the house
+1. Video of how to open up house
+
+## Closing Down the house
+
+Place holder section on closing down the house.
+
+1. If leaving for awhile, drain the water heater.
+If water stays in the heater it will smell.
+1. Place instructions on closing down the house
+1. Video of how to close down the house up house
 
 # Helpful Contacts
 
@@ -69,21 +89,12 @@ Her daughter is [Amy Nechiperenko](#amyNechiperenko)
 
 * **Phone:** `701-626-7177` or `701-626-7386`
   * Information found here: https://www.anamoose.com/lodges.php
+  
+## Jimmy Haugen
 
+* **Phone:** `701-626-7270`
+  * Classmate of Linda who lives in Butte
 
-## Opening up the house
-
-Place holder section on opening up the house.
-
-1. Place instructions on closing down the house
-1. Video of how to open up house
-
-## Closing Down the house
-
-Place holder section on closing down the house.
-
-1. Place instructions on closing down the house
-1. Video of how to close down the house up house
 
 # Log of Past projects at Butte house
 
